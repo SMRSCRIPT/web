@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUTURE VISION | رؤية المستقبل</title>
+    
+    <!-- الفونتات -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&family=Almarai:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- المكتبات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- ملفاتنا -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="neon-effects.css">
+    <link rel="stylesheet" href="glassmorphism.css">
+    <link rel="stylesheet" href="3d-transforms.css">
+    <link rel="stylesheet" href="preloader.css">
+    
+    <!-- الأيقونة -->
+    <link rel="icon" type="image/x-icon" href="assets/images/logo.svg">
+    
+    <!-- وصف الموقع -->
+    <meta name="description" content="موقع فخم بتقنيات حديثة وتجربة مستخدم استثنائية">
+    <meta property="og:image" content="assets/images/bg-main.jpg">
+</head>
+<body>
+    <!-- 🔊 تحكم الصوت -->
+    <div class="audio-controls">
+        <button id="playMusic" class="audio-btn">
+            <i class="fas fa-play"></i>
+        </button>
+        <button id="muteMusic" class="audio-btn">
+            <i class="fas fa-volume-up"></i>
+        </button>
+    </div>
+
+    <!-- 🌟 شاشة التحميل -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="hologram">
+                <span class="letter" style="--i:1">L</span>
+                <span class="letter" style="--i:2">O</span>
+                <span class="letter" style="--i:3">A</span>
+                <span class="letter" style="--i:4">D</span>
+                <span class="letter" style="--i:5">I</span>
+                <span class="letter" style="--i:6">N</span>
+                <span class="letter" style="--i:7">G</span>
+            </div>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 🎨 خلفية الجسيمات -->
+    <div id="particles-js"></div>
+
+    <!-- ✨ تأثيرات النيون العائمة -->
+    <div class="floating-neon">
+        <div class="neon-orb orb-1"></div>
+        <div class="neon-orb orb-2"></div>
+        <div class="neon-orb orb-3"></div>
+        <div class="neon-ring ring-1"></div>
+        <div class="neon-ring ring-2"></div>
+    </div>
+
+    <!-- 🚀 شريط التنقل -->
+    <nav class="navbar cosmic-nav">
+        <div class="nav-container">
+            <!-- الشعار -->
+            <div class="logo-container">
+                <div class="logo-hologram">
+                    <h1 class="logo-text">FUTURE<span class="logo-glow">VISION</span></h1>
+                    <div class="hologram-beam"></div>
+                </div>
+            </div>
+
+            <!-- الروابط -->
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link hover-underline">
+                    <span class="nav-icon"><i class="fas fa-home"></i></span>
+                    الرئيسية
+                </a></li>
+                <li><a href="#about" class="nav-link hover-underline">
+                    <span class="nav-icon"><i class="fas fa-star"></i></span>
+                    عنا
+                </a></li>
+                <li><a href="#services" class="nav-link hover-underline">
+                    <span class="nav-icon"><i class="fas fa-rocket"></i></span>
+                    الخدمات
+                </a></li>
+                <li><a href="#portfolio" class="nav-link hover-underline">
+                    <span class="nav-icon"><i class="fas fa-gem"></i></span>
+                    الأعمال
+                </a></li>
+                <li><a href="#contact" class="nav-link hover-underline">
+                    <span class="nav-icon"><i class="fas fa-comments"></i></span>
+                    اتصل بنا
+                </a></li>
+            </ul>
+
+            <!-- زر القائمة -->
+            <button class="menu-toggle cosmic-btn">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 🌌 القسم الرئيسي -->
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <!-- المحتوى -->
+            <div class="hero-content">
+                <div class="title-wrapper">
+                    <h2 class="hero-subtitle animate__animated animate__fadeInUp">مرحباً في المستقبل</h2>
+                    <h1 class="hero-title">
+                        <span class="title-word word-1">تجربة</span>
+                        <span class="title-word word-2">رقمية</span>
+                        <span class="title-word word-3">لا</span>
+                        <span class="title-word word-4">تُنسى</span>
+                    </h1>
+                </div>
+
+                <p class="hero-description">
+                    نحن نصنع المستحيل واقعاً. <span class="text-gradient">تصاميم ثلاثية الأبعاد</span>, 
+                    <span class="text-shine">واجهات ذكية</span>, 
+                    <span class="text-neon">تجارب تفاعلية</span> تأسر القلب والعقل.
+                </p>
+
+                <!-- الأزرار -->
+                <div class="hero-buttons">
+                    <button class="btn-magnetic cosmic-btn primary-btn">
+                        <span class="btn-text">ابدأ الرحلة</span>
+                        <div class="btn-shine"></div>
+                        <div class="btn-particles"></div>
+                    </button>
+                    
+                    <button class="btn-magnetic cosmic-btn secondary-btn">
+                        <span class="btn-text">شاهد الفيديو</span>
+                        <i class="fas fa-play btn-icon"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- الصورة ثلاثية الأبعاد -->
+            <div class="hero-visual">
+                <div class="hologram-display">
+                    <div class="hologram-content">
+                        <img src="assets/images/hero-3d.png" alt="3D Visual" class="hologram-image">
+                        <div class="hologram-grid"></div>
+                        <div class="hologram-scan"></div>
+                    </div>
+                    <div class="hologram-base"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- موجات سفلية -->
+        <div class="hero-waves">
+            <div class="wave wave-1"></div>
+            <div class="wave wave-2"></div>
+            <div class="wave wave-3"></div>
+        </div>
+    </section>
+
+    <!-- 💎 قسم الإحصاءات -->
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stat-card glass-card">
+                <div class="stat-icon">
+                    <i class="fas fa-users"></i>
+                    <div class="icon-glow"></div>
+                </div>
+                <h3 class="stat-number" data-count="500">0</h3>
+                <p class="stat-label">عميل سعيد</p>
+                <div class="stat-progress"></div>
+            </div>
+
+            <div class="stat-card glass-card">
+                <div class="stat-icon">
+                    <i class="fas fa-project-diagram"></i>
+                    <div class="icon-glow"></div>
+                </div>
+                <h3 class="stat-number" data-count="120">0</h3>
+                <p class="stat-label">مشروع ناجح</p>
+                <div class="stat-progress"></div>
+            </div>
+
+            <div class="stat-card glass-card">
+                <div class="stat-icon">
+                    <i class="fas fa-trophy"></i>
+                    <div class="icon-glow"></div>
+                </div>
+                <h3 class="stat-number" data-count="45">0</h3>
+                <p class="stat-label">جائزة عالمية</p>
+                <div class="stat-progress"></div>
+            </div>
+
+            <div class="stat-card glass-card">
+                <div class="stat-icon">
+                    <i class="fas fa-globe"></i>
+                    <div class="icon-glow"></div>
+                </div>
+                <h3 class="stat-number" data-count="30">0</h3>
+                <p class="stat-label">دولة</p>
+                <div class="stat-progress"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🎭 قسم الخدمات -->
+    <section id="services" class="services-section">
+        <div class="section-header">
+            <h2 class="section-title">
+                <span class="title-line"></span>
+                خدماتنا <span class="title-highlight">المتميزة</span>
+                <span class="title-line"></span>
+            </h2>
+            <p class="section-subtitle">حلول تكنولوجية تسبق الزمن</p>
+        </div>
+
+        <div class="services-grid">
+            <!-- خدمة 1 -->
+            <div class="service-card card-3d">
+                <div class="card-front">
+                    <div class="service-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>ذكاء اصطناعي</h3>
+                    <p>أنظمة ذكية تتعلم وتتطور</p>
+                </div>
+                <div class="card-back">
+                    <h4>ميزات متقدمة</h4>
+                    <ul>
+                        <li>تحليل بيانات ذكي</li>
+                        <li>توقعات دقيقة</li>
+                        <li>تخصيص آلي</li>
+                    </ul>
+                    <button class="card-btn">اكتشف أكثر</button>
+                </div>
+                <div class="card-glow"></div>
+            </div>
+
+            <!-- خدمة 2 -->
+            <div class="service-card card-3d">
+                <div class="card-front">
+                    <div class="service-icon">
+                        <i class="fas fa-vr-cardboard"></i>
+                    </div>
+                    <h3>واقع افتراضي</h3>
+                    <p>عواقع رقمية غامرة</p>
+                </div>
+                <div class="card-back">
+                    <h4>عوالم خيالية</h4>
+                    <ul>
+                        <li>تجارب 360°</li>
+                        <li>محاكاة واقعية</li>
+                        <li>تفاعل كامل</li>
+                    </ul>
+                    <button class="card-btn">انغمس الآن</button>
+                </div>
+                <div class="card-glow"></div>
+            </div>
+
+            <!-- خدمة 3 -->
+            <div class="service-card card-3d">
+                <div class="card-front">
+                    <div class="service-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>سرعة فائقة</h3>
+                    <p>أداء لا يُضاهى</p>
+                </div>
+                <div class="card-back">
+                    <h4>أسرع من الضوء</h4>
+                    <ul>
+                        <li>تحميل فوري</li>
+                        <li>استجابة مباشرة</li>
+                        <li>أداء مثالي</li>
+                    </ul>
+                    <button class="card-btn">جرب السرعة</button>
+                </div>
+                <div class="card-glow"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✨ قسم التأثيرات الخاصة -->
+    <section class="effects-section">
+        <div class="effects-container">
+            <div class="matrix-rain"></div>
+            <div class="energy-beam"></div>
+            <div class="portal-effect">
+                <div class="portal-ring ring-1"></div>
+                <div class="portal-ring ring-2"></div>
+                <div class="portal-ring ring-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🎵 قسم الموسيقى التفاعلي -->
+    <section class="music-section">
+        <div class="music-visualizer">
+            <canvas id="visualizer"></canvas>
+            <div class="music-controls">
+                <button class="music-btn"><i class="fas fa-play"></i></button>
+                <button class="music-btn"><i class="fas fa-pause"></i></button>
+                <button class="music-btn"><i class="fas fa-volume-up"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- 📞 قسم الاتصال -->
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <form class="contact-form glass-card">
+                <h3 class="form-title">اتصل بنا</h3>
+                <div class="form-group">
+                    <input type="text" class="form-input" required>
+                    <label class="form-label">الاسم</label>
+                    <span class="form-line"></span>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-input" required>
+                    <label class="form-label">البريد الإلكتروني</label>
+                    <span class="form-line"></span>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-input" rows="4" required></textarea>
+                    <label class="form-label">رسالتك</label>
+                    <span class="form-line"></span>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span>إرسال</span>
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 👣 التذييل -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>FUTURE<span>VISION</span></h2>
+                    <p>نصنع المستقبل اليوم</p>
+                </div>
+                
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 FUTURE VISION. جميع الحقوق محفوظة</p>
+                <div class="footer-links">
+                    <a href="#">الشروط</a>
+                    <a href="#">الخصوصية</a>
+                    <a href="#">سياسة الاستخدام</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ⭐ زر العودة للأعلى -->
+    <button class="scroll-top">
+        <i class="fas fa-chevron-up"></i>
+        <div class="scroll-glow"></div>
+    </button>
+
+    <!-- 📦 المكتبات -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- ملفاتنا -->
+    <script src="script.js"></script>
+    <script src="particles-config.js"></script>
+    <script src="audio-controls.js"></script>
+    
+    <!-- موسيقى -->
+    <audio id="bgMusic" loop>
+        <source src="assets/music/ambient.mp3" type="audio/mpeg">
+    </audio>
+</body>
+</html>
