@@ -1,0 +1,285 @@
+/* تأثيرات النيون المتقدمة */
+
+.neon-orb {
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(40px);
+    animation: float 6s ease-in-out infinite;
+    z-index: -1;
+}
+
+.orb-1 {
+    width: 300px;
+    height: 300px;
+    background: rgba(108, 99, 255, 0.3);
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.orb-2 {
+    width: 200px;
+    height: 200px;
+    background: rgba(0, 212, 255, 0.3);
+    top: 60%;
+    right: 15%;
+    animation-delay: 2s;
+}
+
+.orb-3 {
+    width: 150px;
+    height: 150px;
+    background: rgba(255, 101, 132, 0.3);
+    bottom: 20%;
+    left: 20%;
+    animation-delay: 4s;
+}
+
+.neon-ring {
+    position: fixed;
+    border: 2px solid;
+    border-radius: 50%;
+    animation: spin 20s linear infinite;
+    z-index: -1;
+}
+
+.ring-1 {
+    width: 500px;
+    height: 500px;
+    border-color: rgba(108, 99, 255, 0.2);
+    top: -100px;
+    right: -100px;
+}
+
+.ring-2 {
+    width: 800px;
+    height: 800px;
+    border-color: rgba(0, 212, 255, 0.15);
+    bottom: -200px;
+    left: -200px;
+    animation-direction: reverse;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* تأثير النص اللامع */
+.text-shine {
+    background: linear-gradient(90deg, #fff, #6C63FF, #00D4FF, #fff);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+
+/* تأثير الخط النيون */
+.hover-underline {
+    position: relative;
+}
+
+.hover-underline::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--gradient-2);
+    transition: width 0.3s ease;
+}
+
+.hover-underline:hover::after {
+    width: 100%;
+}
+
+/* تأثير الشرارة */
+.sparkle {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: white;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: sparkle 1s ease-out forwards;
+}
+
+@keyframes sparkle {
+    0% {
+        transform: scale(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1) rotate(360deg) translateY(-100px);
+        opacity: 0;
+    }
+}
+
+/* تأثير الوهج */
+.glow-effect {
+    position: relative;
+}
+
+.glow-effect::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120%;
+    height: 120%;
+    background: inherit;
+    filter: blur(30px);
+    opacity: 0.5;
+    z-index: -1;
+    border-radius: inherit;
+}
+
+/* تأثير النبض */
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(108, 99, 255, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 20px rgba(108, 99, 255, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(108, 99, 255, 0);
+    }
+}
+
+/* تأثير الليزر */
+.laser-beam {
+    position: absolute;
+    height: 2px;
+    background: var(--gradient-2);
+    filter: blur(1px);
+    transform-origin: left center;
+    animation: laser 2s ease-out;
+}
+
+@keyframes laser {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+/* تأثير المادة الداكنة */
+.neon-grid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(108, 99, 255, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(108, 99, 255, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: gridMove 20s linear infinite;
+    z-index: -2;
+    pointer-events: none;
+}
+
+@keyframes gridMove {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(50px, 50px);
+    }
+}
+
+/* تأثير الطاقة */
+.energy-pulse {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 3px solid;
+    border-color: var(--accent-color);
+    animation: energy 3s ease-out infinite;
+}
+
+@keyframes energy {
+    0% {
+        transform: scale(0.5);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+/* تأثير الهولوغرام */
+.hologram {
+    position: relative;
+    background: linear-gradient(
+        45deg,
+        transparent 49%,
+        rgba(0, 212, 255, 0.1) 50%,
+        transparent 51%
+    );
+    background-size: 10px 10px;
+    animation: hologram 20s linear infinite;
+}
+
+@keyframes hologram {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100px 100px;
+    }
+}
+
+/* تأثير الطيف اللوني */
+.spectrum {
+    position: relative;
+    overflow: hidden;
+}
+
+.spectrum::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        #ff0000,
+        #ffff00,
+        #00ff00,
+        #00ffff,
+        #0000ff,
+        #ff00ff,
+        #ff0000
+    );
+    animation: spectrumMove 3s linear infinite;
+    mix-blend-mode: overlay;
+}
+
+@keyframes spectrumMove {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
